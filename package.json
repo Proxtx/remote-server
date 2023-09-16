@@ -1,0 +1,16 @@
+{
+  "name": "remote-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "author": "Proxtx",
+  "license": "MIT",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.5.8",
+    "@proxtx/material": "^1.3.1"
+  }
+}
