@@ -15,5 +15,23 @@ export const fetchCommands = (clientId, authKey) => {
   if (!clients[clientId]) initClient();
 
   struct.success = true;
-  struct.commands = clients[clientId].commands;
+  //struct.commands = clients[clientId].commands;
+  struct.commands = [];
+
+  return struct;
+};
+
+export const runFunction = (clientId, authKey, ...args) => {
+  let struct = {
+    success: false,
+  };
+
+  if (!authClient(authKey)) {
+    struct.error = 1;
+    return struct;
+  }
+
+  struct.success = true;
+
+  return struct;
 };
